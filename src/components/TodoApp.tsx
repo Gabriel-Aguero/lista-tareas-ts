@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ListaTareas } from "./ListaTareas";
-import { footer as Footer } from "./footer";
+
 
 export const TodoApp = () => {
 
@@ -29,7 +29,10 @@ export const TodoApp = () => {
         </div>
         <button onClick={handleAddTarea}>Agregar tarea</button>
         <ListaTareas listaTareas={listaTareas} handleDeleteTarea= {handleDeleteTarea}/>
-        <Footer/>
+       <div className="autor">
+         <h4>Creado con ❤️ por Gabriel Agüero</h4>
+         <p>👨‍💻Programador Frontend</p>
+        </div>
     </div>
   )
 }
